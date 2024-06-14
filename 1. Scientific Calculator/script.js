@@ -1,20 +1,90 @@
-let click = ""
-let present_num = ""
+// Append number to the result display
+function appendNumber(number) {
+  const result = document.getElementById('result');
+  result.value += number;
+}
 
-// console.log(res[0].firstElementChild.innerHTML = "current_num");
+// Append operator to the result display
+function appendOperator(operator) {
+  const result = document.getElementById('result');
+  result.value += ` ${operator} `;
+}
 
+// Clear the result display
+function clearResult() {
+  document.getElementById('result').value = '';
+}
 
+// Calculate the result
+function calculateResult() {
+  const expression = document.getElementById('result').value;
+  const result = calculate(expression);
+  document.getElementById('result').value = result;
+}
 
-// function result_calculation(){
-//     let res = document.getElementsByClassName("result");
-//     res[0].firstElementChild.innerHTML = current_num 
-// }
+// Tokenize the input
+function tokenize(expression) {
+  return expression.match(/\d+\.?\d*|[+\-*/]/g);
+}
 
-function button_manupulation() {
-    for (let i = 0; i < btn1.length; i++) {
-        
-    }
-    let current = document.getElementsByClassName("btn1");
-    console.log(current[0].firstElementChild.innerHTML = "7");
-    // let current_num = current[0].firstElementChild.innerHTML = "7"    
+// Convert to Reverse Polish Notation (RPN)
+function infixToPostfix(tokens) {
+  const precedence = { '+': 1, '-': 1, '*': 2, '/': 2 };
+  const output = [];
+  const operators = [];
+
+  tokens.forEach(token => {
+      if (!isNaN(token)) {
+          output.push(token);
+      } else if (token in precedence) {
+          while (operators.length && precedence[operators[operators.length - 1]] >= precedence[token]) {
+              output.push(operators.pop());
+          }
+          operators.push(token);
+      }
+  });
+
+  while (operators.length) {
+      output.push(operators.pop());
+  }
+
+  return output;
+}
+
+// Evaluate the RPN expression
+function evaluateRPN(tokens) {
+  const stack = [];
+
+  tokens.forEach(token => {
+      if (!isNaN(token)) {
+          stack.push(parseFloat(token));
+      } else {
+          const b = stack.pop();
+          const a = stack.pop();
+          switch (token) {
+              case '+':
+                  stack.push(a + b);
+                  break;
+              case '-':
+                  stack.push(a - b);
+                  break;
+              case '*':
+                  stack.push(a * b);
+                  break;
+              case '/':
+                  stack.push(a / b);
+                  break;
+          }
+      }
+  });
+
+  return stack[0];
+}
+
+// Main function to calculate the expression
+function calculate(expression) {
+  const tokens = tokenize(expression);
+  const rpn = infixToPostfix(tokens);
+  const result = evaluateRPN(rpn);
+  return result;
 }

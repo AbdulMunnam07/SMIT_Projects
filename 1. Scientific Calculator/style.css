@@ -1,16 +1,18 @@
+/* Page body styling */
 body{
     /* background-color: rgb(151, 193, 207); */
     background-image: url(download.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* first heading styling */
 #heading{
     text-align: center;
     color: white;
     margin-top: 30px;
     /* visibility: hidden; */
 }
-
+/* Second heading styling */
 #heading2{
     text-align: center;
     margin-bottom: 50px;
@@ -18,12 +20,13 @@ body{
     /* visibility: hidden; */
 }
 
+/* For display section */
 .result{
     display: flex;
     justify-content: center;
 }
 
-
+/* 1st row styling */
 .btn1{
     display: flex;
     margin: 10px;
@@ -43,10 +46,67 @@ body{
     box-shadow: 2px 2px 3px 3px rgb(189, 187, 187);
 }
 
-/* btn{
-    margin-left: 15px;
-} */
+/* 2nd row styling */
+.btn2{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    margin: 15px;
 
+}
+
+.btn2 button{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(240, 237, 237);
+    border: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px 3px rgb(189, 187, 187);
+}
+
+/* 3rd row styling */
+.btn3{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+
+.btn3 button{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(240, 237, 237);
+    border: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px 3px rgb(189, 187, 187);
+}
+
+/* 4th row styling */
+.btn4{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+
+.btn4 button{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(240, 237, 237);
+    border: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px 3px rgb(189, 187, 187);
+}
+
+/* display section styling */
 .result input{
     margin: 15px;
     padding: 12px;
@@ -55,6 +115,7 @@ body{
     box-shadow: 1px 1px 2px 2px rgb(189, 187, 187);
 }
 
+/* Parent container of whole calculator */
 .container{
     border: 2px solid black;
     border-radius: 12px;
