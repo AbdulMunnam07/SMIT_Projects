@@ -1,41 +1,39 @@
 /* Page body styling */
-body{
-    /* background-color: rgb(151, 193, 207); */
+body {
     background-image: url(download.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* first heading styling */
-#heading{
+#heading {
     text-align: center;
     color: white;
     margin-top: 30px;
-    /* visibility: hidden; */
 }
+
 /* Second heading styling */
-#heading2{
+#heading2 {
     text-align: center;
     margin-bottom: 50px;
     color: white;
-    /* visibility: hidden; */
 }
 
 /* For display section */
-.result{
+.result {
     display: flex;
     justify-content: center;
 }
 
 /* 1st row styling */
-.btn1{
+.btn1 {
     display: flex;
     margin: 10px;
     justify-content: space-between;
     margin: 15px;
-
 }
 
-.btn1 button{
+.btn1 button {
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -47,15 +45,14 @@ body{
 }
 
 /* 2nd row styling */
-.btn2{
+.btn2 {
     display: flex;
     margin: 10px;
     justify-content: space-between;
     margin: 15px;
-
 }
 
-.btn2 button{
+.btn2 button {
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -67,15 +64,14 @@ body{
 }
 
 /* 3rd row styling */
-.btn3{
+.btn3 {
     display: flex;
     margin: 10px;
     justify-content: space-between;
     margin: 15px;
-
 }
 
-.btn3 button{
+.btn3 button {
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -87,15 +83,33 @@ body{
 }
 
 /* 4th row styling */
-.btn4{
+.btn4 {
     display: flex;
     margin: 10px;
     justify-content: space-between;
     margin: 15px;
-
 }
 
-.btn4 button{
+.btn4 button {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(240, 237, 237);
+    border: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px 3px rgb(189, 187, 187);
+}
+
+/* 5th row styling */
+.btn5 {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.btn5 button {
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -107,7 +121,7 @@ body{
 }
 
 /* display section styling */
-.result input{
+.result input {
     margin: 15px;
     padding: 12px;
     border-radius: 8px;
@@ -116,15 +130,14 @@ body{
 }
 
 /* Parent container of whole calculator */
-.container{
+.container {
     border: 2px solid black;
     border-radius: 12px;
     padding: 5px;
-    width: 250px;
+    width: 290px;
     margin: auto;
     background-color: white;
     border: 5px solid whitesmoke;
     box-shadow: 2px 2px 3px 3px rgb(189, 187, 187);
-    height: 340px;
-
+    height: 420px;
 }
