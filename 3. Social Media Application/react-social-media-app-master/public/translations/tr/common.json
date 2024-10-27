@@ -1,0 +1,104 @@
+{
+  "pages": {
+    "login": {
+      "welcome": "Hoş geldin!",
+      "email": "Email",
+      "password": "Parola",
+      "or": "ya da"
+    },
+    "wildCard": {
+      "404": "404",
+      "header": "Sayfa Bulunamadı",
+      "message": "Üzgünüz, aradığınız sayfa mevcut değil.",
+      "buttonMessage": "Geri Dön"
+    }
+  },
+  "button": {
+    "signIn": "Hesabına giriş yap",
+    "share": "Paylaş",
+    "showMore": "Daha Fazlası"
+  },
+  "logo": {
+    "social": "React Social"
+  },
+  "components": {
+    "post": {
+      "people": "kişi",
+      "likeThis": "bunu beğendi!",
+      "comments": "Yorumlar"
+    },
+    "rightbar": {
+      "and": "ve",
+      "others": "diğerlerinin",
+      "birthdayMessage": "bugün doğum günü!",
+      "onlineFriends": "Çevrimiçi Arkadaşlar",
+      "userInformation": "Kullanıcı Bilgileri",
+      "userFollowings": "Takip Ettiklerin"
+    },
+    "share": {
+      "photoVideo": "Fotoğraf veya Video",
+      "tag": "Etiket",
+      "location": "Lokasyon",
+      "feelings": "Duygular",
+      "status": "Ne düşünüyorsun?",
+      "share": "Paylaş"
+    },
+    "sidebar": {
+      "feed": "Akış",
+      "chats": "Yazışmalar",
+      "videos": "Videolar",
+      "groups": "Gruplar",
+      "bookmarks": "Yer İmleri",
+      "questions": "Sorular",
+      "jobs": "İşler",
+      "events": "Etkinlikler",
+      "courses": "Kurslar",
+      "closeFriends": "Yakın Arkadaşlar"
+    },
+    "topbar": {
+      "timeLine": "Akış",
+      "logOut": "Çıkış",
+      "search": "Bir arkadaş ara",
+      "popover": {
+        "friendRequests": "Arkadaşlık İstekleri",
+        "noMutualFriend": "Ortak arkadaş yok",
+        "mutualFriend": "Ortak arkadaş",
+        "noFriendRequest": "Arkadaşlık İsteği Yok",
+        "userSettings": "Kullanıcı Ayarları"
+      }
+    },
+    "alert": {
+      "title": {
+        "icon": "İkon",
+        "close": "Kapat"
+      },
+      "success": "Başarılı"
+    },
+    "tooltip": {
+      "email": "E-posta alanı, doğrulama kurallarına uyan tüm e-postaları kabul eder.",
+      "password": "Şifre alanı, doğrulama kurallarına uyan değerleri kabul eder."
+    }
+  },
+  "a11y": {
+    "closeFriendProfilePicture": "Yakın arkadaş profil fotoğrafı",
+    "followedCompany": "Takip edilen şirket",
+    "birthDayPresentBox": "Doğum günü hediyesi kutusu",
+    "advertisement": "Reklam",
+    "postOwnerImage": "Gönderi sahibi fotoğrafı",
+    "postImage": "Gönderi fotoğrafı",
+    "likePost": "Gönderiyi beğen",
+    "favoritePost": "Gönderiyi favorile",
+    "currentUserPicture": "Şu anki kullanıcı fotoğrafı",
+    "currentUserBackgroundImage": "Şu anki kullanıcı arkaplan fotoğrafı",
+    "goToHome": "Anasayfaya git",
+    "goToProfile": "Profil sayfasına git",
+    "goToFeed": "Akışa git",
+    "goToChats": "Mesajlara git",
+    "goToVideos": "Videolara git",
+    "goToGroups": "Gruplara git",
+    "goToBookMarks": "Yer imlerine git",
+    "goToQuestions": "Sorulara git",
+    "goToJobs": "İşlere git",
+    "goToEvents": "Etkinliklere git"
+  }
+}
